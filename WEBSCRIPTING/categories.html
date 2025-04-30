@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Categories - Online Book Shop</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Online Book Shop</h1>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="categories.html">Categories</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+      </div>
+
+      <div class="search-box">
+        <input type="search" class="search" placeholder="Search books..." aria-label="Search books" />
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="categories" class="page">
+      <h2 class="section-title">categories</h2>
+      <p>search for the best sellers! </p>
+      <form id="preferenceForm">
+        <label>Genre:
+          <select id="genre">
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value=" Fiction">Fiction</option>
+            <option value="Mystery">Mystery</option>
+            
+          </select>
+        </label><br><br>
+    
+        <label>Maximum Price:
+          <input type="number" id="maxPrice" placeholder="e.g. 20">
+        </label><br><br>
+    
+        <label>Author:
+          <input type="text" id="author" placeholder="Optional">
+        </label><br><br>
+    
+        <button type="submit">Get Recommendations</button>
+      </form>
+    
+      <h2>Recommended Books:</h2>
+      <div id="results"></div>
+
+          <div class="form-group">
+            <label for="author">Search the Author:</label>
+            <input type="text" id="author" name="author" placeholder="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="title">Search by Title:</label>
+            <input type="text" id="title" name="title" placeholder="e.g., The Great Gatsby" />
+          </div>
+
+          <button type="submit" id="search-button">Find Books</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
